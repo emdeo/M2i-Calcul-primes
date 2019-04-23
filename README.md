@@ -1,8 +1,10 @@
 # README
 
+Demander à un utilsateur de renseigner son salaire et le nombre d'enfants à sa charge. Afficher la prime de salaire, la prime d'enfants et la prime totale selon les choix de l'utilisateur.
+
 ## Table des matières
 
-1. [Ressources][#ressources]
+1. [Ressources](#ressources)
 2. [Head](#head)
 3. [Body - Infos utilisateur](#infos)
 4. [Body - Check boxes](#boxes)
