@@ -11,7 +11,7 @@ function Traitement(selection) {
     switch (selection.id) {
         case "checkSalaire":
             if (selection.checked) {
-                document.getElementById("resultSalaire").style.visibility = "visible" // else "hidden"
+                document.getElementById("resultSalaire").style.visibility = "visible"
             }
             else {
                 document.getElementById("resultSalaire").style.visibility = "hidden"
@@ -20,7 +20,7 @@ function Traitement(selection) {
 
         case "checkEnfants":
             if (selection.checked) {
-                document.getElementById("resultEnfants").style.visibility = "visible" // else "hidden"
+                document.getElementById("resultEnfants").style.visibility = "visible"
             }
             else {
                 document.getElementById("resultEnfants").style.visibility = "hidden"
@@ -29,7 +29,7 @@ function Traitement(selection) {
 
         case "checkTotale":
             if (selection.checked) {
-                document.getElementById("resultTotale").style.visibility = "visible" // else "hidden"
+                document.getElementById("resultTotale").style.visibility = "visible"
             }
             else {
                 document.getElementById("resultTotale").style.visibility = "hidden"
