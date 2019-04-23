@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Primes annuelles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style définis sur le site /maxcdn.bootstrapcdn.com -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Scripts bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Calculez vos primes annuelles :)</h2>
+
+        <!-- Entrer nom et prénom -->
+        <form action="/action_page.php" class="form-horizontal" method="post">
+
+            <div class="form-group row">
+
+                <label for="txtNom" class="col-sm-2">Nom</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="txtNom" name="txtNom" placeholder="Votre nom">
+                </div>
+
+                <label for="txtPrenom" class="col-sm-2">Prénom</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="txtPrenom" name="txtPrenom" placeholder="Votre prénom">
+                </div>
+            </div>
+        </form>
+
+        <!-- Entrer salaire et nombre d'enfants -->
+        <form action="/action_page.php" class="form-horizontal" method="post">
+
+            <div class="form-group row">
+
+                <label for="txtSalaire" class="col-sm-2">Salaire mensuel</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="txtSalaire" name="txtSalaire" placeholder="(euros)"
+                        required>
+                </div>
+
+                <label for="txtNbEnfants" class="col-sm-2">Nombre d'enfants</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="txtNbEnfants" name="txtNbEnfants"
+                        placeholder="combien d'enfants ?" required>
+                </div>
+            </div>
+        </form>
+
+        <!-- Choisir les primes à afficher -->
+        <!-- classe .form-check-inline pour afficher les checkboxes en ligne -->
+        <form action="/action_page.php" class="form-horizontal" method="post">
+            <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="checkbox" value="" id="checkSalaire" onclick="Traitement(this)">
+                <label class="form-check-label" for="checkSalaire">
+                    Prime annuelle salaire
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="checkbox" value="" id="checkEnfants" onclick="Traitement(this)">
+                <label class="form-check-label" for="checkEnfants">
+                    Prime annuelle enfants
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                
+                <input class="form-check-input" type="checkbox" value="" id="checkTotale" onclick="Traitement(this)">
+                <label class="form-check-label" for="checkTotale">
+                    Prime annuelle totale
+                </label>
+            </div>
+        </form>
+
+        <!-- Résultat prime salaire -->
+        <div class="form-group row" style.visibility="hidden">
+            <label for="resultSalaire" class="col-sm-2 col-form-label">Votre prime salaire</label>
+            <input type="text" class="form-control col-sm-10" id="resultSalaire" name="resultSalaire" readonly>
+        </div>
+
+        <!-- Résultat prime enfants -->
+        <div class="form-group row" style.visibility="hidden">
+            <label for="resultEnfants" class="col-sm-2 col-form-label">Votre prime enfants</label>
+            <input type="text" class="form-control col-sm-10" id="resultEnfants" name="resultEnfants" readonly>
+        </div>
+
+        <!-- Résultat prime totale -->
+        <div class="form-group row" style.visibility="hidden">
+            <label for="resultTotale" class="col-sm-2 col-form-label">Votre prime totale</label>
+            <input type="text" class="form-control col-sm-10" id="resultTotale" name="resultTotale" readonly>
+        </div>
+
+    </div>
+
+    <script src="./sources.js"></script>
+
+</body>
+
+</html>
