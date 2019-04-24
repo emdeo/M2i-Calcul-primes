@@ -27,7 +27,7 @@ Scripts nécessaires pour utiliser BS4 :
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-## <a href="#body1">Body - Infos utilisateur</a>
+## <a href="body1">Body - Infos utilisateur</a>
 
 Créer un **label** et son **input** sur la même ligne (par ex. nom de l'utilisateur). L'**input** doit prendre un **id** unique afin de pouvoir facilement récupérer sa valeur dans le fichier **source.js**. Le **label** possède un attribut **for** qui sépcifie à quel élément il est lié.
 
