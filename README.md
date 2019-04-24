@@ -3,13 +3,12 @@
 Demander à un utilsateur de renseigner son salaire et le nombre d'enfants à sa charge. Afficher la prime de salaire, la prime d'enfants et la prime totale selon les choix de l'utilisateur.
 
 ## Table des matières
-
 1. [Ressources](#ressources)
 2. [Head](#head)
 3. [Body - Infos utilisateur](#infos)
 4. [Body - Check boxes](#boxes)
-5. [Body - Résultat (primes)](#resultat)
-6. [JS - Classe Personne()](#personne)
+5. [Body - Afficher les primes](#primes)
+6. [JS - Classe Personne()](#presonne)
 7. [JS - Fonction Traitement()](#traitement)
 
 ## <a href="ressources"></a>Ressources
@@ -62,7 +61,7 @@ La classe **.form-check-inline** sert à afficher les checkboxes sur une seule l
 
 Le paramètre **this** se réfère à l'élément faisant appel à la fonction. Quand on définit cette fonction, on se réfère à cet élément avec le mot-clé **selection** qui permet d'en récupérer les attributs et leurs valeurs (voir [plus bas](#traitement)).
 
-## <a href="resultat">Body - Résultat (primes)</a>
+## <a href="primes">Body - Afficher les primes</a>
 
 On affiche enfin la prime de l'utilisateur. Cette section de la page est cachée (**style="visibility:hidden"**) jusqu'à ce que l'utilisateur clique sur le **checkbox** correspondant.
 
