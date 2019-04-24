@@ -6,17 +6,17 @@ Demander à un utilsateur de renseigner son salaire et le nombre d'enfants à sa
 
 1. [Ressources](#ressources)
 2. [Head](#head)
-3. [Body - Infos utilisateur](#infos)
-4. [Body - Check boxes](#boxes)
+3. [Infos utilisateur](#infos)
+4. [Check boxes](#boxes)
 5. [Body - Résultat (primes)](#resultat)
 6. [JS - Classe Personne()](#personne)
 7. [JS - Fonction Traitement()](#traitement)
 
-## <a href="ressources">Ressources</a>
+## <a href="ressources"></a>Ressources
 
 Tutos rapides en JavaScript sur le site <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools</a>.
 
-## <a href="head">Head</a>
+## <a href="head"></a>Head
 
 Les feuilles de style BS4 sont définies sur le site maxcdn.bootstrapcdn.com
 
@@ -28,7 +28,7 @@ Scripts nécessaires pour utiliser BS4 :
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-## <a href="infos">Infos utilisateur</a>
+## <a href="infos"></a>Infos utilisateur
 
 Créer un label et son input sur la même ligne (par ex. nom de l'utilisateur). L'**input** doit prendre un **id** unique afin de pouvoir facilement récupérer sa valeur dans le fichier **source.js**. Le **label** possède un attribut **for** qui sépcifie à quel élément il est lié.
 
