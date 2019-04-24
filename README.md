@@ -17,15 +17,6 @@ Tutos rapides en JavaScript sur le site <a href="https://www.w3schools.com/js/de
 
 ## <a href="head">Head</a>
 
-Les feuilles de style BS4 sont définies sur le site maxcdn.bootstrapcdn.com
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-Scripts nécessaires pour utiliser BS4 :
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 ## <a href="body1">Body - Infos utilisateur</a>
 
