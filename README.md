@@ -29,7 +29,7 @@ Scripts nécessaires pour utiliser BS4 :
 
 ## <a href="#infos">Body - Infos utilisateur</a>
 
-Créer un label et son input sur la même ligne (par ex. nom de l'utilisateur). L'**input** doit prendre un **id** unique afin de pouvoir facilement récupérer sa valeur dans le fichier **source.js**. Le **label** possède un attribut **for** qui sépcifie à quel élément il est lié.
+Créer un **label** et son **input** sur la même ligne (par ex. nom de l'utilisateur). L'**input** doit prendre un **id** unique afin de pouvoir facilement récupérer sa valeur dans le fichier **source.js**. Le **label** possède un attribut **for** qui sépcifie à quel élément il est lié.
 
     <form action="/action_page.php" class="form-horizontal" method="post">
         <div class="form-group row">
@@ -41,6 +41,11 @@ Créer un label et son input sur la même ligne (par ex. nom de l'utilisateur). 
 
         </div>
     </form>
+
+Pour créer un **input** déroulant (par ex. pour le nombre d'enfants), utiliser les attributs **min** et **step** :
+
+    <label class="col-form-label col-sm-2" for="nbEnfants">Nombre d'enfants</label>
+    <input type="number" name="nbEnfants" id="nbEnfants" class="form-control col-sm-4" min="0" step="1">
 
 ## <a href="boxes">Body - Check boxes</a>
 
@@ -145,5 +150,18 @@ La fonction **Traitement()** agit sur l'élément dans lequel elle est appelée.
 
             case "...":
             case "...":
+        }
+    }
+
+On peut aussi manipuler la visibilité des résultats via **.style.display = ["flex","none"]** :
+
+    function Traitement() {
+        if (document.getElementById("checkSalaire").checked) {
+            document.getElementById("divSalaire").style.display = "flex";
+        } else {
+            document.getElementById("divPrimeSalaire").style.display = "none";
+        }
+        if (...) {
+            ...
         }
     }
