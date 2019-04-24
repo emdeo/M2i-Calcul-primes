@@ -5,11 +5,11 @@ Demander à un utilsateur de renseigner son salaire et le nombre d'enfants à sa
 ## Table des matières
 1. [Ressources](#ressources)
 2. [Head](#head)
-3. [Body - Infos utilisateur](#infos)
-4. [Body - Check boxes](#boxes)
-5. [Body - Afficher les primes](#primes)
-6. [JS - Classe Personne()](#presonne)
-7. [JS - Fonction Traitement()](#traitement)
+3. [Body - Infos utilisateur](#body1)
+4. [Body - Check boxes](#body2)
+5. [Body - Afficher les primes](#body3)
+6. [JS - Classe Personne()](#JS1)
+7. [JS - Fonction Traitement()](#JS2)
 
 ## <a href="ressources">Ressources</a>
 
@@ -27,7 +27,7 @@ Scripts nécessaires pour utiliser BS4 :
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-## <a href="#infos">Body - Infos utilisateur</a>
+## <a href="#body1">Body - Infos utilisateur</a>
 
 Créer un **label** et son **input** sur la même ligne (par ex. nom de l'utilisateur). L'**input** doit prendre un **id** unique afin de pouvoir facilement récupérer sa valeur dans le fichier **source.js**. Le **label** possède un attribut **for** qui sépcifie à quel élément il est lié.
 
@@ -47,7 +47,7 @@ Pour créer un **input** déroulant (par ex. pour le nombre d'enfants), utiliser
     <label class="col-form-label col-sm-2" for="nbEnfants">Nombre d'enfants</label>
     <input type="number" name="nbEnfants" id="nbEnfants" class="form-control col-sm-4" min="0" step="1">
 
-## <a href="boxes">Body - Check boxes</a>
+## <a href="body2">Body - Check boxes</a>
 
 L'utilisateur peut choisir les primes qu'il souhaite voir s'afficher. On a recours aux **checkboxes** pour permettre à l'utilisateur de sélectionner plusieurs **input** (en opposition aux **radioboxes**, où un seul **input** peut être sélectionné dans la liste).
 
@@ -66,7 +66,7 @@ La classe **.form-check-inline** sert à afficher les checkboxes sur une seule l
 
 Le paramètre **this** se réfère à l'élément faisant appel à la fonction. Quand on définit cette fonction, on se réfère à cet élément avec le mot-clé **selection** qui permet d'en récupérer les attributs et leurs valeurs (voir [plus bas](#traitement)).
 
-## <a href="primes">Body - Afficher les primes</a>
+## <a href="body3">Body - Afficher les primes</a>
 
 On affiche enfin la prime de l'utilisateur. Cette section de la page est cachée (**style="visibility:hidden"**) jusqu'à ce que l'utilisateur clique sur le **checkbox** correspondant.
 
@@ -83,7 +83,7 @@ L'**input** affiche le résultat final, on ne peut pas modifier son contenu (att
 
     </div>
 
-## <a href="personne">JS - Classe Personne()</a>
+## <a href="JS1">JS - Classe Personne()</a>
 
 Le constructeur passe en premier. Il indique qu'à chaque fois qu'on crée un objet, il doit prendre en paramètre les nom, prénom, salaire et nombre d'enfants de l'utilisateur.
 
@@ -117,7 +117,7 @@ La méthode **CalculPrime()** permet d'attribuer le résultat de chaque fonction
         document.getElementById("resultTotale").value = this.PrimeTotale()
     }
 
-## <a href="traitement">JS - Fonction Traitement()</a>
+## <a href="JS2">JS - Fonction Traitement()</a>
 
 La fonction **Traitement()** agit sur l'élément dans lequel elle est appelée. On se réfère à cet élément avec le mot-clé **selection**. Elle agit en quatre étapes.
 
