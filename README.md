@@ -6,11 +6,14 @@ Demander à un utilsateur de renseigner son salaire et le nombre d'enfants à sa
 1. [Ressources](#ressources)
 2. [Head](#head)
 3. [Body](#body)
-    1.[Infos utilisateur](#infos-utilisateur)
+
+    1. [Infos utilisateur](#infos-utilisateur)
     2. [Check boxes](#check-boxes)
     3. [Afficher les primes](#afficher-les-primes)
+    
 4. [JS](#JS)
-    1.[Classe Personne](#classe-personne)
+
+    1. [Classe Personne](#classe-personne)
     2. [Fonction Traitement](#fonction-traitement)
 
 ## <a href="ressources">Ressources</a>
